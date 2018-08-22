@@ -6,11 +6,25 @@ A trait for use with Laravel 5 models allowing easy encryption/decryption of att
 
 Add the following to the `composer.json` file in your project:
 
-    "chriswillerton/encryptable": "1.*"
+    "engage/encryptable": "1.*"
 
 or you can run the below on the command line in the root of your project:
 
-    composer require "chriswillerton/encryptable" "1.*"
+    composer require "engage/encryptable" "1.*"
+
+Ensure you are using the Engage composer repository in your `composer.json`
+
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://composer.engageinteractive.co.uk"
+        }
+    ],
+
+    "config": {
+        "secure-http": false
+    }
+
 
 
 ## Setup
@@ -19,7 +33,7 @@ To get started, add the trait to the model.
 
 You also need to add an array detailing which attributes should be encrypted. Add this as a property on your model called `$encryptedAttributes`.
 
-    use ChrisWillerton\Encryptable\Encryptable;
+    use Engage\Encryptable\Encryptable;
 
     class YourModel extends Eloquent
     {

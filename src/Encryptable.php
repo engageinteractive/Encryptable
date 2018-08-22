@@ -1,6 +1,6 @@
 <?php
 
-namespace ChrisWillerton\Encryptable;
+namespace Engage\Encryptable;
 
 use Log;
 use Illuminate\Contracts\Encryption\DecryptException;

@@ -1,11 +1,11 @@
 {
-    "name": "chriswillerton/encryptable",
+    "name": "engage/encryptable",
     "description": "Trait for use with Laravel 5 models allowing easy encryption/decryption of attributes.",
     "keywords": ["laravel", "encryption", "model"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Chris Willerton"
+            "name": "Engage"
         }
     ],
     "require": {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ChrisWillerton\\Encryptable\\": "src/"
+            "Engage\\Encryptable\\": "src/"
         }
     },
     "minimum-stability": "stable"
